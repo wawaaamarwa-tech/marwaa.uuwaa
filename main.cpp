@@ -11,7 +11,7 @@ struct siswa {
 };
 
 int main(){
-    siswa s;  // bikin 1 data siswa
+    siswa s;
 
     cout << "=== INPUT DATA SISWA ===" << endl;
     cout << "Masukkan Nama: ";
@@ -45,3 +45,4 @@ int main(){
 
     return 0;
 }
+
