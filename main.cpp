@@ -1,26 +1,47 @@
-#include <iostream>
-
+##include <iostream>
 using namespace std;
-struct nilai{
-    float Mtk;
-    float BIn;
-    float Big;
-    float IPA;
-};
-struct siswa{
-    string nama;
-    string NISN;
-    string jurusan;
-    nilai Nilai; // struct in struct
-};
-void tambahDataSiswa();//menambahkan data pada file siswa.txt
-void tampilDataSiswa();//membaca data dari file siswa.txt dan ditampilkan
-void cariSiswa();// berdasarkan NISN
-float nilaiAkhir();// nilai akhir = 40%matematika+30%IPA+20%B indonesia +20%B Inggris
-void ranking(); // menampilkan data siswa berdasarkan peringkatnya
 
-int main()
-{
-    cout << "Hello world!" << endl;
+struct siswa {
+    string nama;
+    string nisn;
+    string jurusan;
+    float nilaiMtk;
+    float nilaiBindo;
+    float nilaiIpa;
+};
+
+int main(){
+    siswa s;  // bikin 1 data siswa
+
+    cout << "=== INPUT DATA SISWA ===" << endl;
+    cout << "Masukkan Nama: ";
+    getline(cin, s.nama);
+    cout << "Masukkan NISN: ";
+    cin >> s.nisn;
+    cout << "Masukkan Jurusan: ";
+    cin.ignore(); 
+    getline(cin, s.jurusan);
+    cout << "Masukkan Nilai Matematika: ";
+    cin >> s.nilaiMtk;
+    cout << "Masukkan Nilai Bahasa Indonesia: ";
+    cin >> s.nilaiBindo;
+    cout << "Masukkan Nilai IPA: ";
+    cin >> s.nilaiIpa;
+
+    float rata = (s.nilaiMtk + s.nilaiBindo + s.nilaiIpa) / 3;
+
+    cout << endl;
+    cout << "=== DATA SISWA ===" << endl;
+    cout << "Nama    : " << s.nama << endl;
+    cout << "NISN    : " << s.nisn << endl;
+    cout << "Jurusan : " << s.jurusan << endl;
+    cout << "Nilai Rata-rata : " << rata << endl;
+
+    if (rata >= 75){
+        cout << "Keterangan : Lulus" << endl;
+    } else {
+        cout << "Keterangan : Tidak Lulus" << endl;
+    }
+
     return 0;
 }
