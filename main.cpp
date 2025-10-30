@@ -25,9 +25,9 @@ float hitungAkhir(Nilai n);
 int main() {
     int pilih;
     do {
-        cout << "\n=====================================\n";
-        cout << "        PROGRAM DATA SISWA SMK       \n";
-        cout << "=====================================\n";
+        cout << "\n-------------------------------------\n";
+        cout << "        PROGRAM DATA SISWA             \n";
+        cout << "---------------------------------------\n";
         cout << "1. Tambah Data Siswa\n";
         cout << "2. Tampilkan Semua Data\n";
         cout << "3. Cari Data Siswa (NISN)\n";
