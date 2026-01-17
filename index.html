@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Profil Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: gray;
+            text-align: center;
+            margin: 0;
+        }
+
+        .card {
+            background: pink;
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        h2 {
+            margin: 10px 0 5px;
+        }
+
+        p {
+            color: black;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        #profil {
+            display: none;
+            margin-top: 15px;
+            text-align: left;
+        }
+        .ig {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #E1306C;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+        .github {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #E1306C;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+        
+    </style>
+</head>
+
+<body>
+  <div class="card">
+       <img src="IMG-20250925-WA0045.jpg" width="300">
+    <h2> Engineering👾</h2>
+
+    <button onclick="tampilProfil()"> buka profil saya!!</button>
+
+    <div id="profil">
+      <h2 style="text-align:center;"> About Me</h2>
+        <p><b> Nama:</b> Marwa Rizqiani putri</p>
+        <p><b>Jurusan:</b> RPL</p>
+        <p><b>Kelas:</b> X</p>
+        <p><b>Hobi:</b> || listening to music || badminton || belajar hal baru || </p>
+        <p><b>Skill:</b> || desain web || merancang UI UX || </p>
+        <p><b> Status:</b> hamba allah</p>
+        <p><b> Kesukaan:</b>
+        || desain web
+        || merancang web
+        || makan
+        || tidur || </p>
+        <p><b>Motivasi:</b> "jangan tumbang dulu sebelum menjadi engineering yang berpengaruh untuk dunia" </p>
+        
+        <a href="https://www.instagram.com/_sannziie_0/" class="ig">Follow My IG</a>
+        
+        <a href="https://github.com/wawaaamarwa-tech/marwaa.uuwaa/blob/main/sanzie.html" class="github">akses github</a>
+
+    </div>
+</div>
+
+<script>
+    function tampilProfil() {
+        document.getElementById("profil").style.display = "block";
+    }
+</script>
+</body>
+</html>
+
+
